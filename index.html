@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>I'm so sorry Rajvi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true">
+    <span class="orb orb-a"></span>
+    <span class="orb orb-b"></span>
+    <span class="orb orb-c"></span>
+    <div class="petals" id="petals"></div>
+  </div>
+
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Pages">
+      <a href="index.html" aria-current="page">letter</a>
+      <a href="confession.html">what happened</a>
+      <a href="promises.html">promises</a>
+      <a href="refill.html">the jar</a>
+      <a href="for-you.html">for you</a>
+    </nav>
+  </header>
+
+  <main class="page center">
+    <div class="stagger">
+      <p class="folio">01 — the letter</p>
+      <p class="kicker">for Rajvi</p>
+      <h1>I'm so sorry</h1>
+      <div class="rule" aria-hidden="true"></div>
+      <p class="letter">I am so sorry Rajvi for being such an inconsiderate <span class="wobble">bhukkad</span> and eating all the churan. <span class="face" role="img" aria-label="sad face">😔</span></p>
+      <p class="letter">I will not let my <span class="wobble">bhukkadness</span> affect our relationship again.</p>
+      <button class="sign" id="sign" type="button" aria-expanded="false" aria-controls="signNote">— vraj</button>
+      <p class="sign-note" id="signNote" hidden>still me. still sorry.</p>
+      <button class="text-btn" id="psToggle" type="button" aria-expanded="false" aria-controls="ps">read the postscript</button>
+      <p class="ps" id="ps" hidden>P.S. Saying sorry does not put the churan back. The next pages are me trying anyway.</p>
+    </div>
+    <a class="next" href="confession.html">what happened <span aria-hidden="true">→</span></a>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

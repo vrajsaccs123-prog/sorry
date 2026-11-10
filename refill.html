@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The jar — I'm so sorry Rajvi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true">
+    <span class="orb orb-a"></span>
+    <span class="orb orb-b"></span>
+    <span class="orb orb-c"></span>
+    <div class="petals" id="petals"></div>
+  </div>
+
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Pages">
+      <a href="index.html">letter</a>
+      <a href="confession.html">what happened</a>
+      <a href="promises.html">promises</a>
+      <a href="refill.html" aria-current="page">the jar</a>
+      <a href="for-you.html">for you</a>
+    </nav>
+  </header>
+
+  <main class="page center">
+    <p class="folio">04 — the jar</p>
+    <p class="kicker">put it back</p>
+    <h1>Refill what I took</h1>
+    <p class="lede">I cannot un-eat it. I can give it back, one piece at a time. Tap the churan.</p>
+    <p class="status" id="jarCount" aria-live="polite">0 of 8 pieces returned</p>
+
+    <div class="jar-layout">
+      <div class="jar" id="jar">
+        <div class="jar-lid"></div>
+        <div class="jar-neck"></div>
+        <div class="jar-body">
+          <div class="jar-fill" id="jarFill"></div>
+          <div class="jar-pieces" id="jarPieces"></div>
+          <div class="jar-shine" aria-hidden="true"></div>
+        </div>
+      </div>
+
+      <p class="tray-label">the pieces I took</p>
+      <div class="tray" id="tray">
+        <button class="churan" type="button" aria-label="Return a piece of churan"></button>
+        <button class="churan" type="button" aria-label="Return a piece of churan"></button>
+        <button class="churan" type="button" aria-label="Return a piece of churan"></button>
+        <button class="churan" type="button" aria-label="Return a piece of churan"></button>
+        <button class="churan" type="button" aria-label="Return a piece of churan"></button>
+        <button class="churan" type="button" aria-label="Return a piece of churan"></button>
+        <button class="churan" type="button" aria-label="Return a piece of churan"></button>
+        <button class="churan" type="button" aria-label="Return a piece of churan"></button>
+      </div>
+
+      <p class="banner" id="jarDone" hidden>The jar is full again. Thank you for letting me put it back. I am still sorry.</p>
+      <a class="next" href="for-you.html">this page is for you <span aria-hidden="true">→</span></a>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

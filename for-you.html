@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>For you — I'm so sorry Rajvi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true">
+    <span class="orb orb-a"></span>
+    <span class="orb orb-b"></span>
+    <span class="orb orb-c"></span>
+    <div class="petals" id="petals"></div>
+  </div>
+
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Pages">
+      <a href="index.html">letter</a>
+      <a href="confession.html">what happened</a>
+      <a href="promises.html">promises</a>
+      <a href="refill.html">the jar</a>
+      <a href="for-you.html" aria-current="page">for you</a>
+    </nav>
+  </header>
+
+  <main class="page center">
+    <div class="stagger">
+      <p class="folio">05 — for you</p>
+      <p class="kicker">Rajvi</p>
+      <h1>One more sorry</h1>
+      <p class="lede">Tap the card. Every tap is another way of saying it, and I mean each one.</p>
+    </div>
+
+    <p class="status" id="sorryCount" aria-live="polite">1 of 8</p>
+
+    <button class="stage" id="stage" type="button">
+      <span class="stage-kicker">tap for another sorry</span>
+      <span class="stage-line swap" id="stageLine">I'm sorry, Rajvi.</span>
+    </button>
+
+    <a class="next" href="index.html">back to the first sorry <span aria-hidden="true">→</span></a>
+
+    <script type="application/json" id="sorryLines">
+      [
+        "I'm sorry, Rajvi.",
+        "I'm sorry I was inconsiderate.",
+        "I'm sorry I ate all the churan.",
+        "I'm sorry I didn't think of you first.",
+        "You deserved the whole jar.",
+        "I will not let my bhukkadness get between us again.",
+        "I hope you can forgive me.",
+        "Even if it takes time, I am still sorry."
+      ]
+    </script>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

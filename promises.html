@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Promises — I'm so sorry Rajvi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true">
+    <span class="orb orb-a"></span>
+    <span class="orb orb-b"></span>
+    <span class="orb orb-c"></span>
+    <div class="petals" id="petals"></div>
+  </div>
+
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Pages">
+      <a href="index.html">letter</a>
+      <a href="confession.html">what happened</a>
+      <a href="promises.html" aria-current="page">promises</a>
+      <a href="refill.html">the jar</a>
+      <a href="for-you.html">for you</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <header class="center-head">
+      <p class="folio">03 — promises</p>
+      <p class="kicker">tap each seal</p>
+      <h1>What I promise</h1>
+      <p class="lede">Open them, seal them, unseal them if you want. A click is not the promise. Keeping it is. This is me saying each one out loud.</p>
+      <p class="status" id="promiseStatus" aria-live="polite">0 of 5 sealed</p>
+    </header>
+
+    <div class="promise-list">
+      <button class="promise" type="button" aria-pressed="false" style="--i: 0">
+        <span class="seal" aria-hidden="true">seal</span>
+        <span>
+          <span class="promise-label">one</span>
+          <span class="promise-text">I will ask before I eat anything that is yours.</span>
+        </span>
+      </button>
+      <button class="promise" type="button" aria-pressed="false" style="--i: 1">
+        <span class="seal" aria-hidden="true">seal</span>
+        <span>
+          <span class="promise-label">two</span>
+          <span class="promise-text">I will leave the churan alone unless you offer it.</span>
+        </span>
+      </button>
+      <button class="promise" type="button" aria-pressed="false" style="--i: 2">
+        <span class="seal" aria-hidden="true">seal</span>
+        <span>
+          <span class="promise-label">three</span>
+          <span class="promise-text">I will not let being a bhukkad outrank being considerate.</span>
+        </span>
+      </button>
+      <button class="promise" type="button" aria-pressed="false" style="--i: 3">
+        <span class="seal" aria-hidden="true">seal</span>
+        <span>
+          <span class="promise-label">four</span>
+          <span class="promise-text">I will replace what I finished, and I will not pretend that replaces the sorry.</span>
+        </span>
+      </button>
+      <button class="promise" type="button" aria-pressed="false" style="--i: 4">
+        <span class="seal" aria-hidden="true">seal</span>
+        <span>
+          <span class="promise-label">five</span>
+          <span class="promise-text">I will remember that small things count when they belong to you.</span>
+        </span>
+      </button>
+    </div>
+
+    <p class="banner" id="promiseDone" hidden>All five are sealed. I meant every one, Rajvi.</p>
+    <a class="next" href="refill.html">refill the jar <span aria-hidden="true">→</span></a>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
